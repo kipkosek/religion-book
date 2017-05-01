@@ -1,0 +1,71 @@
+
+body {
+  background-color: #f6ead9;
+}
+
+.container-welcome {
+  display: grid;
+  grid-template-rows: 60px 525px 1fr;
+  grid-row-gap: 20px;
+  grid-template-columns: 230px 345px 5% 1fr;
+  grid-column-gap: 20px;
+  border-top-style: solid;
+  border-top-color: #552631;
+  border-top-width: 60px;
+
+}
+
+#cover {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+#info {
+  grid-row-start: 2;
+  grid-column-start: 4;
+}
+
+h1 {
+  -webkit-margin-before: 0.1em;
+  -webkit-margin-after: 0.1em;
+}
+
+#title {
+  color: #552631;
+  font-family: Avenir, sans-serif;
+  font-size: 32px;
+}
+
+#description {
+  color: #552631;
+  font-family: Avenir, sans-serif;
+  font-size: 24px;
+}
+
+#buy-exam {
+  grid-row-start: 3;
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: space-between;
+}
+
+#buy, #exam, #intro {
+    background-color: #552631;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#buy:hover, #exam:hover, #intro:hover {
+  background-color: #7f3540;
+}
+
+#buy:active, #exam:active, #intro:active {
+  transform: translateY(3px);
+}
