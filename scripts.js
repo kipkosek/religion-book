@@ -12,9 +12,9 @@ $("#dropbtn").click(function() {
 });
 
 $(window).on("load", function() {
-  $("#title").hide().fadeIn(1000);
-  $("#description").hide().delay(1000).fadeIn(1000);
-  $("#intro").hide().delay(2000).fadeIn(1000);
+  $("#title").fadeIn(1000);
+  $("#description").delay(1000).fadeIn(1000);
+  $("div.hidden").delay(2000).fadeIn(1000);
 
   var scrollDistance = $("#reviews-list").offset().top - $(window).height() + 200;
 
